@@ -49,4 +49,5 @@ uts: 35%, uas: 35%)
 • Buat flowchart dan penjelasan programnya
 
 
-
+**Flowchart**
+![flowchartpraktikum](https://user-images.githubusercontent.com/116176746/203956460-f147b7e9-2d6f-420d-9a45-0f1fd6f16500.png)
