@@ -50,4 +50,38 @@ uts: 35%, uas: 35%)
 
 
 **Flowchart**
+
+
 ![flowchartpraktikum](https://user-images.githubusercontent.com/116176746/203956460-f147b7e9-2d6f-420d-9a45-0f1fd6f16500.png)
+
+
+Code:
+```python
+data = []
+while True :
+	nama	= input	("Nama 		:")
+	nim		= input ("NIM 		:")
+	tugas	= int(input("Nilai Tugas :"))
+	uts 	= int(input("Nilai UTS 	:"))
+	uas 	= int(input("Nilai UAS 	:"))
+	nilaiakhir = float(tugas)*30/100+(uts)*35/100+(uas)*35/100
+	data.append ([nama,nim,tugas,uts,uas,nilaiakhir])
+	lagi = input ("Tambah lagi (y/t)?")
+	if lagi.lower() =="t":
+		break
+
+
+print ("=======================================================================================")
+print ("| No |	 Nama 	| NIM 	| TUGAS | UTS 	|	 UAS 	|	 NILAI AKHIR 	|")
+print ("=======================================================================================")
+i=0
+for x in data:
+	i+=1
+	print ("|{6:2}  | {0:9}| {1:6}| {2:3}   |{3:3}    |	 {4:3}	| 	{5:10.2f}  	|"\
+		.format (x[0][:9],x[1][:6],x[2],x[3],x[4],x[5],i))
+print("=======================================================================================")
+```
+
+Output:
+![output data](https://user-images.githubusercontent.com/116176746/204072279-bf0970a4-3b8a-4004-8c4c-085cdcb15e4d.png)
+
